@@ -6,27 +6,21 @@ long_description = (this_directory / "README.md").read_text()
 
 
 setup(
-    name="jsoniq",
-    packages=['jsoniq'],
-    py_modules=["src"],
-    version='0.1',
+    name='jsoniq',
+    version='0.1.1',
+    license='MIT',
     description="Query over Json file",
-    long_description=long_description,
     long_description_content_type='text/markdown',
-    classifiers=[
-        'Development Status :: 4 - Beta',
-        'Intended Audience :: Developers',
-        'Natural Language :: English',
-        'Operating System :: OS Independent',
-        'Topic :: Software Development :: Libraries :: '
-        'Python Modules',
-        'Programming Language :: Python :: 2',
-        'Programming Language :: Python :: 3',
-    ],
+    long_description=long_description,
+    url='https://github.com/mansy996/JsonIQ',
     author='Ahmed Mansy',
     author_email='ahmed.mansy996@gmail.com',
-    license='MIT',
-    url="",
+    python_requires='>=3.6',
+    classifiers = [
+        'Programming Language :: Python :: 3',
+        'License :: OSI Approved :: MIT License',
+        'Operating System :: OS Independent',
+    ],
     keywords=['Python', 'plugin'],
     include_package_data=True,
     zip_safe=False,
