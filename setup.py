@@ -6,20 +6,30 @@ long_description = (this_directory / "README.md").read_text()
 
 
 setup(
-    name='jsoniq',
-    version='0.1.1',
-    license='MIT',
+    name="jsoniq",
+    version='0.1',
     description="Query over Json file",
-    url='https://github.com/mansy996/JsonIQ',
+    long_description=long_description,
+    long_description_content_type='text/markdown',
+    classifiers=[
+        'Development Status :: 4 - Beta',
+        'Intended Audience :: Developers',
+        'Natural Language :: English',
+        'Operating System :: OS Independent',
+        'Topic :: Software Development :: Libraries :: '
+        'Python Modules',
+        'Programming Language :: Python :: 2',
+        'Programming Language :: Python :: 3',
+    ],
     author='Ahmed Mansy',
     author_email='ahmed.mansy996@gmail.com',
-    python_requires='>=3.6',
-    classifiers = [
-        'Programming Language :: Python :: 3',
-        'License :: OSI Approved :: MIT License',
-        'Operating System :: OS Independent',
-    ],
+    license='MIT',
+    url="",
+    keywords=['Python', 'plugin'],
+    include_package_data=True,
+    zip_safe=False,
     package_dir = {"": "src"},
     packages = find_packages(where="src"),
-    readme = 'README.md',
+    setup_requires=['setuptools>=38.6.0'],
+    readme="README.md",
 )
