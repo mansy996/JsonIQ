@@ -8,7 +8,7 @@ long_description = (this_directory / "README.md").read_text()
 setup(
     name="jsoniq",
     version='0.1',
-    py_modules=['src'],
+    py_modules=['jsoniq'],
     description="Query over Json file",
     long_description=long_description,
     long_description_content_type='text/markdown',
