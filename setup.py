@@ -8,6 +8,7 @@ long_description = (this_directory / "README.md").read_text()
 setup(
     name="jsoniq",
     version='0.1',
+    py_modules=['src'],
     description="Query over Json file",
     long_description=long_description,
     long_description_content_type='text/markdown',
@@ -28,8 +29,6 @@ setup(
     keywords=['Python', 'plugin'],
     include_package_data=True,
     zip_safe=False,
-    package_dir = {"": "src"},
-    packages = find_packages(where="src"),
     setup_requires=['setuptools>=38.6.0'],
     readme="README.md",
 )
