@@ -1,6 +1,4 @@
-"""Run "python setup.py install" to install pyjsonq."""
-
-from setuptools import setup
+from setuptools import setup, find_packages
 from pathlib import Path
 
 this_directory = Path(__file__).parent
@@ -10,7 +8,7 @@ long_description = (this_directory / "README.md").read_text()
 setup(
     name="jsoniq",
     packages=['jsoniq'],
-    py_modules=["src"]
+    # py_modules=["src"],
     version='0.1',
     description="Query over Json file",
     long_description=long_description,
@@ -34,4 +32,6 @@ setup(
     zip_safe=False,
     setup_requires=['setuptools>=38.6.0'],
     readme = 'README.md', 
+    package_dir = {"": "src"},
+    packages = find_packages(where="src"),
 )
